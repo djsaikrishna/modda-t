@@ -8,7 +8,6 @@
         document.getElementsByTagName('input')[0].style.backgroundColor=bgcolor;
         document.getElementsByTagName('input')[0].style.color=text;
         document.getElementsByTagName('img')[0].style.filter = bgcolor === 'black'?'invert(0%)':'';
-        document.getElementsByTagName('img')[0].style.filter = bgcolor === 'black'?'invert(50%)':'';
         if(document.getElementsByClassName('card').length){          
           document.getElementsByClassName('card')[0].style.backgroundColor = bgcolor;
           document.getElementsByClassName('card')[0].style.borderColor = bgcolor === 'black'?'#0D6EFD':'';
