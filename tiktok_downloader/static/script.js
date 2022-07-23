@@ -7,6 +7,7 @@
         document.getElementsByTagName('input')[0].style.borderColor = bgcolor==='black'?'#0D6EFD':'';
         document.getElementsByTagName('input')[0].style.backgroundColor=bgcolor;
         document.getElementsByTagName('input')[0].style.color=text;
+        document.getElementsByTagName('img')[0].style.filter = bgcolor === 'black'?'invert(50%)':'';
         document.getElementsByTagName('img')[0].style.filter = bgcolor === 'black'?'invert(0%)':'';
         if(document.getElementsByClassName('card').length){          
           document.getElementsByClassName('card')[0].style.backgroundColor = bgcolor;
