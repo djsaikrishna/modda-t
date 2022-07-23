@@ -1,7 +1,11 @@
-name: dev
-image: golang:alpine
-volumes:
-  - /go/pkg/
-  - /root/.cache/go-build/
-forward:
-  - 8080:8080
+FROM python:3.10
+
+WORKDIR /app
+
+COPY requirements.txt /app/
+
+RUN pip3 install -r requirements.txt
+
+COPY . /app
+
+CMD python3 pingallbot.py
